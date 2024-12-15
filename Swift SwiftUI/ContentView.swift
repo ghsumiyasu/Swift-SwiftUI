@@ -19,6 +19,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            Spacer()
             HStack(spacing: 0) {
                 Text(referencia01)
                     .font(.system(size: CGFloat(20)))
@@ -72,7 +73,11 @@ struct ContentView: View {
             }
 
         }
-        .padding()
+        //O padding coloca bordas no seu frame
+        //Em certos casos e melhor nao colocar ele
+        //Neste exemplo nao coloco e ele ocupa a tela
+        //no seu limite
+        //.padding()
     }
 }
 
